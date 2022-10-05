@@ -1,6 +1,3 @@
-# WRITE YOUR SOLUTION HERE:
-# energiaystävällisempi kello, päivitys 1/sek
-# 2.10.2022 jari.pohjasmaki@gmail.com
 # 4.10.2022 versio 2.0
 import pygame
 from datetime import datetime
