@@ -10,7 +10,8 @@ class Kello:
 
         pygame.init()
         self.display = pygame.display.set_mode((self.width, self.height))
-        self.fontti = pygame.font.SysFont("Arial", 50)
+        self.fontti = pygame.font.SysFont("cantarell", 80)
+        # print(sorted(pygame.font.get_fonts()))
 
         # viisarien pituudet
         self.radius_sek = self.height / 2 - 20
@@ -25,22 +26,22 @@ class Kello:
 
         self.silmukka()
 
-    # numerot kellotauluunm
+    # numerot kellotauluun
     def kellotaulu(self):
         x_origo = self.width / 2
         y_origo = self.height / 2
         etaisyys = self.radius_sek
 
-        iii = self.fontti.render("III", True, (255, 255, 255))
+        iii = self.fontti.render("3", True, (255, 255, 255))
         self.display.blit(iii, (x_origo + etaisyys - iii.get_width(), y_origo - iii.get_height() / 2))
 
-        ix = self.fontti.render("IX", True, (255, 255, 255))
+        ix = self.fontti.render("9", True, (255, 255, 255))
         self.display.blit(ix, (x_origo - etaisyys, y_origo - ix.get_height() / 2))
             
-        xii = self.fontti.render("XII", True, (255, 255, 255))
+        xii = self.fontti.render("12", True, (255, 255, 255))
         self.display.blit(xii, (x_origo - xii.get_width() / 2, y_origo - etaisyys))
 
-        vi = self.fontti.render("VI", True, (255, 255, 255))
+        vi = self.fontti.render("6", True, (255, 255, 255))
         self.display.blit(vi, (x_origo - vi.get_width() / 2, y_origo + etaisyys - vi.get_height()))
 
     # x- ja y-koordinaatit, end_pos
