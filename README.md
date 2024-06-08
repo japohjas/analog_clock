@@ -4,5 +4,3 @@ Analog clock
 Linux:
 python3 pygame
 $ pip3 install pygame
-
-080624
